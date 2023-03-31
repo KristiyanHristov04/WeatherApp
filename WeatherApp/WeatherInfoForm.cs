@@ -77,13 +77,36 @@ namespace WeatherApp
         {
             Weather[] weather = JsonConvert.DeserializeObject<Weather[]>(responseWeather);
             int id = weather[0].Id;
+            string icon = weather[0].Icon;
             if (id == 800)
             {
-                pictureBox.Image = Image.FromFile("../../../Resources/800clear.png");
+                if (icon.Contains('d'))
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/800clear.png");
+                }
+                else
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/800clearNight.png");
+                }
             }
             else if (id >= 801 && id <= 804)
             {
-                pictureBox.Image = Image.FromFile("../../../Resources/801-804clouds.png");
+                if (id == 801 && icon.Contains('d'))
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/801-804clouds.png");
+                }
+                else if (id == 801 && icon.Contains('n'))
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/cloudMoon.png");
+                }
+                else if (id == 802)
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/cloudNeutral.png");
+                }
+                else if (id == 803 || id == 804)
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/cloudCloud.png");
+                }
             }
             else if (id >= 701 && id <= 781)
             {
@@ -95,7 +118,22 @@ namespace WeatherApp
             }
             else if (id >= 500 && id <= 531)
             {
-                pictureBox.Image = Image.FromFile("../../../Resources/500-531rain.png");
+                if (id >= 500 && id <= 504 && icon.Contains('d'))
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/300-321drizzle.png");
+                }
+                else if (id >= 500 && id <= 504 && icon.Contains('n'))
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/500-531rain.png");
+                }
+                else if (id == 511)
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/600-622snow.png");
+                }
+                else if (id >= 520 && id <= 531)
+                {
+                    pictureBox.Image = Image.FromFile("../../../Resources/500-531rain.png");
+                }
             }
             else if (id >= 300 && id <= 321)
             {
