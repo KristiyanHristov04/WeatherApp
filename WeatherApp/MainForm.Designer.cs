@@ -46,8 +46,10 @@
             this.textBox1.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.textBox1.Location = new System.Drawing.Point(82, 99);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Enter city name";
             this.textBox1.Size = new System.Drawing.Size(181, 26);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TabStop = false;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // button1
