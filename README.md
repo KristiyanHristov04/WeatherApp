@@ -11,5 +11,5 @@ Screenshots
 <img src="https://i.ibb.co/TKVZQ2f/image.png"><br>
 <img src="https://i.ibb.co/0MgnDrV/image.png"><br>
 <img src="https://i.ibb.co/4P1dvjs/image.png"><br>
-<img src="https://i.ibb.co/0MgnDrV/image.png"><br>
+<img src="https://i.ibb.co/tZ495Ys/image.png"><br>
 <img src="https://i.ibb.co/3fmrztC/image.png">
