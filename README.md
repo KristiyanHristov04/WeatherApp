@@ -5,7 +5,7 @@ This app gives you information about the weather temperature, humidity, country,
 
 Screenshots
 
-<img src="https://i.ibb.co/gdXK8JZ/image.png"><br>
+<img src="https://i.ibb.co/xhHmr5F/image.png"><br>
 <img src="https://i.ibb.co/QcLNd4c/image.png"><br>
 <img src="https://i.ibb.co/x13kNDD/image.png"><br>
 <img src="https://i.ibb.co/TKVZQ2f/image.png"><br>
